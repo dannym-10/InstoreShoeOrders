@@ -7,10 +7,8 @@ function App () {
   const [theOrders, setTheOrders] = useState([])
 
   useEffect(() => {
-    setTheOrders(store.shoeList)
-  }, [])
-
-  console.log(store)
+    setTheOrders(store.shoeList);
+  }, []);
 
   return (
     <div className='App'>
@@ -19,4 +17,4 @@ function App () {
   )
 }
 
-export default App
+export default App;
