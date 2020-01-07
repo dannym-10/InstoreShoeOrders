@@ -1,7 +1,7 @@
 class store {
     shoeList = [
         {
-            id : null,
+            id : 1,
             productName : 'Nike Air VaporMax 3',
             category : 'Men',
             size : '9',
@@ -10,7 +10,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 2,
             productName : 'adidas Originals OZEREGO',
             category : 'Women',
             size : '4',
@@ -19,7 +19,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 3,
             productName : 'Nike Air Max 95 SE',
             category : 'Men',
             size : '10',
@@ -28,7 +28,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 4,
             productName : 'Nike Air VaporMax 2019',
             category : 'Junior',
             size : '3',
@@ -37,7 +37,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 5,
             productName : 'Nike Air VaporMax 3',
             category : 'Men',
             size : '9',
@@ -46,7 +46,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 6,
             productName : 'adidas Originals Flux',
             category : 'Women',
             size : '5',
@@ -55,7 +55,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 7,
             productName : 'Nike Air Max 95',
             category : 'Men',
             size : '11',
@@ -64,7 +64,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 8,
             productName : 'Nike Air Max 98',
             category : 'Junior',
             size : '3',
@@ -73,7 +73,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 9,
             productName : 'Nike Air VaporMax 1',
             category : 'Men',
             size : '11',
@@ -82,7 +82,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 10,
             productName : 'adidas Originals ZX',
             category : 'Women',
             size : '5',
@@ -91,7 +91,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 11,
             productName : 'Nike Air Max 97',
             category : 'Men',
             size : '8',
@@ -100,7 +100,7 @@ class store {
             customerInitials : '',
         },
         {
-            id : null,
+            id : 12,
             productName : 'Nike Air VaporMax 2018',
             category : 'Junior',
             size : '2',

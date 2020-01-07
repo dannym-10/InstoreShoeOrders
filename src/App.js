@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import store from './store';
-import ItemsList from './Components/ItemsList';
+import ItemsList from './Components/ItemList';
 
 function App () {
   const [theOrders, setTheOrders] = useState([])
