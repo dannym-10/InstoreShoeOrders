@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import FilterButton from '../FilterButton';
 import './Filters.scss';
 
@@ -8,32 +8,28 @@ function Filters () {
   const [ filterInQueue, setfilterInQueue ] = useState(false);
   const [ filterOutOfStock, setfilterOutOfStock ] = useState(false);
 
-  // useEffect(() => {
-    
-  // }, [filterReady, filterOnWay, filterInQueue, filterOutOfStock]);
-
   const toggleFilterReady = () => {
-    setFilterReady(!filterReady);
+    setFilterReady(filterReady => !filterReady);
   }
 
   const toggleFilterOnWay = () => {
-    setFilterOnWay(!filterOnWay);
+    setFilterOnWay(filterOnWay => !filterOnWay);
   }
 
   const toggleFilterInQueue = () => {
-    setfilterInQueue(!filterInQueue);
+    setfilterInQueue(filterInQueue => !filterInQueue);
   }
 
   const toggleFilterNoStock = () => {
-    setfilterOutOfStock(!filterOutOfStock);
+    setfilterOutOfStock(filterOutOfStock => !filterOutOfStock);
   }
 
   return (
     <div className='Filters-wrapper'>
-      <FilterButton filterLabel='ready to try' status='ready' onClick={toggleFilterReady} />
-      <FilterButton filterLabel='on the way' status='otw' onClick={toggleFilterOnWay} />
-      <FilterButton filterLabel='in the queue' status='queue' onClick={toggleFilterInQueue} />
-      <FilterButton filterLabel='out of stock' status='oos' onClick={toggleFilterNoStock} />
+      <FilterButton filterLabel='ready to try' status='ready' updateReadyState={(value) => toggleFilterReady(value)} />
+      <FilterButton filterLabel='on the way' status='otw' updateOtwState={(value) => toggleFilterOnWay(value)} />
+      <FilterButton filterLabel='in the queue' status='queue' updateQueueState={(value) => toggleFilterInQueue(value)} />
+      <FilterButton filterLabel='out of stock' status='oos' updateOosState={(value) => toggleFilterNoStock(value)} />
     </div>
   )
 }
