@@ -128,6 +128,17 @@ class store {
             customerInitials : 'OL',
             image: Vapormax2019,
         },
+        ,
+        {
+            id : 13,
+            productName : 'Nike AirMax 2017',
+            category : 'Women',
+            size : '6',
+            colour : 'Red',
+            status : 'queue',
+            customerInitials : 'Pw',
+            image: VapormaxFlyknit,
+        },
     ]
 }
 
