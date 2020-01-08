@@ -53,7 +53,7 @@ class store {
             colour : 'Gry/Wht',
             status : 'queue',
             customerInitials : 'AE',
-            image: VapormaxFlyknit,
+            image: AdidasOzweego,
         },
         {
             id : 6,
@@ -63,7 +63,7 @@ class store {
             colour : 'Blue',
             status : 'ready',
             customerInitials : 'PT',
-            image: AdidasOzweego,
+            image: VapormaxFlyknit,
         },
 
         {
@@ -74,7 +74,7 @@ class store {
             colour : 'Red',
             status : 'otw',
             customerInitials : 'WD',
-            image: AirMax95,
+            image: Vapormax2019,
         },
         {
 
@@ -85,7 +85,7 @@ class store {
             colour : 'Black',
             status : 'ready',
             customerInitials : 'HC',
-            image: Vapormax2019,
+            image: AirMax95,
         },
         {
             
@@ -106,7 +106,7 @@ class store {
             colour : 'White',
             status : 'queue',
             customerInitials : 'JM',
-            image: AdidasOzweego,
+            image: AirMax95,
         },
         {
             id : 11,
@@ -116,7 +116,7 @@ class store {
             colour : 'Red',
             status : 'ready',
             customerInitials : 'MB',
-            image: AirMax95,
+            image: AdidasOzweego,
         },
         {
             id : 12,
@@ -126,7 +126,7 @@ class store {
             colour : 'Black',
             status : 'otw',
             customerInitials : 'OL',
-            image: Vapormax2019,
+            image: VapormaxFlyknit,
         },
         ,
         {
@@ -137,7 +137,7 @@ class store {
             colour : 'Red',
             status : 'queue',
             customerInitials : 'Pw',
-            image: VapormaxFlyknit,
+            image: Vapormax2019,
         },
     ]
 }

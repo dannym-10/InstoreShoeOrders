@@ -30,10 +30,10 @@ function Filters () {
 
   return (
     <div className='Filters-wrapper'>
-      <FilterButton filterLabel='ready to try' ststus='ready' onClick={toggleFilterReady} />
-      <FilterButton filterLabel='on the way' ststus='otw' onClick={toggleFilterOnWay} />
-      <FilterButton filterLabel='in the queue' ststus='queue' onClick={toggleFilterInQueue} />
-      <FilterButton filterLabel='out of stock' ststus='oos' onClick={toggleFilterNoStock} />
+      <FilterButton filterLabel='ready to try' status='ready' onClick={toggleFilterReady} />
+      <FilterButton filterLabel='on the way' status='otw' onClick={toggleFilterOnWay} />
+      <FilterButton filterLabel='in the queue' status='queue' onClick={toggleFilterInQueue} />
+      <FilterButton filterLabel='out of stock' status='oos' onClick={toggleFilterNoStock} />
     </div>
   )
 }
