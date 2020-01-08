@@ -1,1 +1,99 @@
-`
+@import '../../Styles/variables.scss';
+
+.ShoeItem-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    margin: 8px 0;
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 12px;
+
+        .shoe-img-container {
+            height: 92px;
+            
+            img {
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        .name-container {
+            color: $text-white;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 500;
+            max-width: 125px;
+        }
+
+        .category-container {
+            display: flex;
+            flex-direction: column;
+            color: $text-off-white;
+            font-size: 22px
+        }
+
+        .size-container {
+            display: flex;
+            flex-direction: column;
+            color: $text-off-white;
+            font-size: 22px
+        }
+
+        .colour-container {
+            display: flex;
+            flex-direction: column;
+            color: $text-off-white;
+            font-size: 22px;
+        }
+
+        .initials-container {
+            border: 1px solid $text-white;
+            border-radius: 4px;
+            width: 52px;
+            height: 52px;
+            color: $text-off-white-2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+
+.status-container {
+    height: 100%;
+    width: 20px;
+    border-radius: 5px 0 0 5px;
+    border: 1px white solid;
+    border-right: none;
+
+    span {
+
+    }
+}
+
+.bg-ready {
+    background-color: $color-green;
+}
+
+.bg-queue {
+    background-color: $color-orange;
+}
+
+.bg-otw {
+    background-color: $color-blue;
+}
+.bg-oos {
+    background-color: $color-red;
+}

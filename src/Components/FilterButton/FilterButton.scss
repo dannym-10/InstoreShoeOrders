@@ -1,0 +1,28 @@
+@import '../../Styles/variables.scss';
+
+.FilterButtons-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    align-items: center;
+
+    .status-colour {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    .filter-label {
+        color: $text-white;
+        text-transform: uppercase;
+        font-size: 9px;
+        font-weight: 700;
+        padding-left: 7px;
+        letter-spacing: 1px;
+    }
+}
+
+.FilterButtons-wrapper.active .filter-label {
+    color: green;
+}

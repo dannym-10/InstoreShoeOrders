@@ -1,5 +1,7 @@
-@import './variables.scss';
+@import '../../Styles/variables.scss';
 
 .ItemList-wrapper {
-    background: $color-Grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

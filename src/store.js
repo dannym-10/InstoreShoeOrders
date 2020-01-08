@@ -1,3 +1,8 @@
+import VapormaxFlyknit from '../src/Assets/vapuormax-flyknit.png'; 
+import AdidasOzweego from '../src/Assets/adidas-ozweego.png'; 
+import AirMax95 from '../src/Assets/airmax95.png'; 
+import Vapormax2019 from '../src/Assets/vapormax2019.png'; 
+
 class store {
     shoeList = [
         {
@@ -6,17 +11,19 @@ class store {
             category : 'Men',
             size : '9',
             colour : 'Gry/Wht',
-            status : '',
-            customerInitials : '',
+            status : 'ready',
+            customerInitials : 'JH',
+            image: VapormaxFlyknit
         },
         {
             id : 2,
-            productName : 'adidas Originals OZEREGO',
+            productName : 'adidas Originals OZWEEGO',
             category : 'Women',
             size : '4',
             colour : 'Black',
-            status : '',
-            customerInitials : '',
+            status : 'ready',
+            customerInitials : 'JD',
+            image: AdidasOzweego,
         },
         {
             id : 3,
@@ -24,8 +31,9 @@ class store {
             category : 'Men',
             size : '10',
             colour : 'Blue',
-            status : '',
-            customerInitials : '',
+            status : 'queue',
+            customerInitials : 'GM',
+            image: AirMax95,
         },
         {
             id : 4,
@@ -33,8 +41,9 @@ class store {
             category : 'Junior',
             size : '3',
             colour : 'Black',
-            status : '',
-            customerInitials : '',
+            status : 'oos',
+            customerInitials : 'FP',
+            image: Vapormax2019
         },
         {
             id : 5,
@@ -42,8 +51,9 @@ class store {
             category : 'Men',
             size : '9',
             colour : 'Gry/Wht',
-            status : '',
-            customerInitials : '',
+            status : 'queue',
+            customerInitials : 'AE',
+            image: VapormaxFlyknit,
         },
         {
             id : 6,
@@ -51,35 +61,42 @@ class store {
             category : 'Women',
             size : '5',
             colour : 'Blue',
-            status : '',
-            customerInitials : '',
+            status : 'ready',
+            customerInitials : 'PT',
+            image: AdidasOzweego,
         },
+
         {
             id : 7,
             productName : 'Nike Air Max 95',
             category : 'Men',
             size : '11',
             colour : 'Red',
-            status : '',
-            customerInitials : '',
+            status : 'otw',
+            customerInitials : 'WD',
+            image: AirMax95,
         },
         {
+
             id : 8,
             productName : 'Nike Air Max 98',
             category : 'Junior',
             size : '3',
             colour : 'Black',
-            status : '',
-            customerInitials : '',
+            status : 'ready',
+            customerInitials : 'HC',
+            image: Vapormax2019,
         },
         {
+            
             id : 9,
             productName : 'Nike Air VaporMax 1',
             category : 'Men',
             size : '11',
             colour : 'Gry',
-            status : '',
-            customerInitials : '',
+            status : 'ready',
+            customerInitials : 'SY',
+            image: VapormaxFlyknit,
         },
         {
             id : 10,
@@ -87,8 +104,9 @@ class store {
             category : 'Women',
             size : '5',
             colour : 'White',
-            status : '',
-            customerInitials : '',
+            status : 'queue',
+            customerInitials : 'JM',
+            image: AdidasOzweego,
         },
         {
             id : 11,
@@ -96,8 +114,9 @@ class store {
             category : 'Men',
             size : '8',
             colour : 'Red',
-            status : '',
-            customerInitials : '',
+            status : 'ready',
+            customerInitials : 'MB',
+            image: AirMax95,
         },
         {
             id : 12,
@@ -105,10 +124,11 @@ class store {
             category : 'Junior',
             size : '2',
             colour : 'Black',
-            status : '',
-            customerInitials : '',
+            status : 'otw',
+            customerInitials : 'OL',
+            image: Vapormax2019,
         },
     ]
 }
 
-export default new store();
+export default new store()
