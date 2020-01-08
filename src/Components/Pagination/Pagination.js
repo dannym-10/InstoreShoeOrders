@@ -7,7 +7,6 @@ function Pagination ({totalOrders, theOrdersPerPage, paginateOrders, currentPage
   for (let i = 1; i <= Math.ceil(totalOrders / theOrdersPerPage); i++) {
     totalPageNumbers.push(i);
   }
-  console.log(totalPageNumbers);
 
   return (
     <div className='Pagination-wrapper'>
