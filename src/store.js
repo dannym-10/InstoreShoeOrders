@@ -41,7 +41,7 @@ class store {
             category : 'Junior',
             size : '3',
             colour : 'Black',
-            status : 'oos',
+            status : 'otw',
             customerInitials : 'FP',
             image: Vapormax2019
         },
@@ -65,7 +65,6 @@ class store {
             customerInitials : 'PT',
             image: VapormaxFlyknit,
         },
-
         {
             id : 7,
             productName : 'Nike Air Max 95',
@@ -114,7 +113,7 @@ class store {
             category : 'Men',
             size : '8',
             colour : 'Red',
-            status : 'ready',
+            status : 'oos',
             customerInitials : 'MB',
             image: AdidasOzweego,
         },
@@ -128,7 +127,6 @@ class store {
             customerInitials : 'OL',
             image: VapormaxFlyknit,
         },
-        ,
         {
             id : 13,
             productName : 'Nike AirMax 2017',

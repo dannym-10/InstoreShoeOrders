@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     height: 120px;
-    border: 1px solid white;
+    border: 1px solid $text-off-white;
     border-radius: 5px;
     width: 100%;
     margin: 8px 0;
@@ -57,11 +57,11 @@
         }
 
         .initials-container {
-            border: 1px solid $text-white;
+            border: 1px solid $text-off-white;
             border-radius: 4px;
             width: 52px;
             height: 52px;
-            color: $text-off-white-2;
+            color: $text-white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -75,12 +75,8 @@
     height: 100%;
     width: 20px;
     border-radius: 5px 0 0 5px;
-    border: 1px white solid;
+    border: 1px $text-off-white solid;
     border-right: none;
-
-    span {
-
-    }
 }
 
 .bg-ready {
