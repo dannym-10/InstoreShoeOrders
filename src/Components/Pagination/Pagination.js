@@ -13,7 +13,7 @@ function Pagination ({totalOrders, theOrdersPerPage, paginateOrders, currentPage
       <ul className='pagination-pages'>
         {totalPageNumbers.map(page => (
           <li key={page}>
-            <a href='#' onClick={() => paginateOrders(page)}>
+            <a href='/#' onClick={() => paginateOrders(page)}>
               <span className={`page-bullet ${currentPage === page ? 'active' : '' }`} />
             </a>
           </li>

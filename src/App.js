@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import './Styles/cssReset.scss';
 import store from './store';
-// import Filters from './Components/Filters';
 import FilterButton from './Components/FilterButton';
 import ItemsList from './Components/ItemList'; 
 import Pagination from './Components/Pagination';
@@ -24,7 +23,7 @@ function App () {
     setTheOrders(store.shoeList);
     setFilteredData(filteredData);
     setIsLoading(false);
-  }, []);
+  }, [filteredData]);
 
   useEffect(() => {
     if (seconds <= 3) {
