@@ -26,7 +26,7 @@ function App () {
   }, [filteredData]);
 
   useEffect(() => {
-    if (seconds <= 3) {
+    if (seconds <= 10) {
       let interval = null;
       interval = setInterval(() => {
         setSeconds(seconds => seconds + 1);
