@@ -10,22 +10,22 @@
     width: 100%;
     margin: 8px 0;
 
+    .shoe-img-container {
+        height: 92px;
+        padding-left: 24px;
+
+        img {
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
     .main-container {
         display: flex;
         flex-direction: row;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        margin: 0 12px;
-
-        .shoe-img-container {
-            height: 92px;
-            
-            img {
-                height: 100%;
-                border-radius: 5px;
-            }
-        }
+        margin: 0 24px;
 
         .name-container {
             color: $text-white;
