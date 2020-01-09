@@ -5,33 +5,51 @@ import store from './store';
 // import Filters from './Components/Filters';
 import FilterButton from './Components/FilterButton';
 import ItemsList from './Components/ItemList'; 
-import Pagination from './Components/Pagination'; 
+import Pagination from './Components/Pagination';
 
 function App () {
   const [theOrders, setTheOrders] = useState([]);
-  // const [filteredData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [ordersPerPage] = useState(4);
   const [filterReady, setFilterReady] = useState(false);
   const [filterOnWay, setFilterOnWay] = useState(false);
-  const [filterInQueue, setfilterInQueue] = useState(false);
+  const [filterInQueue, setFilterInQueue] = useState(false);
   const [filterOutOfStock, setfilterOutOfStock] = useState(false);
+  const [seconds, setSeconds] = useState(1);
 
   useEffect(() => {
     setIsLoading(true);
     setTheOrders(store.shoeList);
-    // setFilteredData(theOrders);
+    setFilteredData(filteredData);
     setIsLoading(false);
   }, []);
 
+  useEffect(() => {
+    if (seconds <= 3) {
+      let interval = null;
+      interval = setInterval(() => {
+        setSeconds(seconds => seconds + 1);
+      }, 1000);
+      return () => clearInterval(interval);
+    } else {
+      setSeconds(1);
+      if (currentPage === (Math.ceil(theOrders.length / ordersPerPage))) {
+        setCurrentPage(1);
+      } else {
+        setCurrentPage(currentPage + 1);
+      }
+    }
+  }, [seconds]);
+  
   const getLastOrderIndex = ordersPerPage * currentPage;
   const getFirstOrderIndex = getLastOrderIndex - ordersPerPage;
 
   const toggleFilterReady = () => {
     setFilterReady(filterReady => !filterReady);
     if (filterReady) {
-      const filteredReadyData = theOrders.filter(order => {
+      const filteredReadyData = filteredData.filter(order => {
         return (order.status.includes('ready'));
       });
       setTheOrders(filteredReadyData);
@@ -41,7 +59,7 @@ function App () {
   const toggleFilterOnWay = () => {
     setFilterOnWay(filterOnWay => !filterOnWay);
     if (filterOnWay) {
-      const filteredOnWayData = theOrders.filter(order => {
+      const filteredOnWayData = filteredData.filter(order => {
         return (order.status.includes('otw'));
       });
       setTheOrders(filteredOnWayData);
@@ -49,9 +67,9 @@ function App () {
   }
 
   const toggleFilterInQueue = () => {
-    setfilterInQueue(filterInQueue => !filterInQueue);
+    setFilterInQueue(filterInQueue => !filterInQueue);
     if (filterInQueue) {
-      const filteredQueueData = theOrders.filter(order => {
+      const filteredQueueData = filteredData.filter(order => {
         return (order.status.includes('queue'));
       });
       setTheOrders(filteredQueueData);
@@ -61,7 +79,7 @@ function App () {
   const toggleFilterNoStock = () => {
     setfilterOutOfStock(filterOutOfStock => !filterOutOfStock);
     if (filterOutOfStock) {
-      const filteredOosData = theOrders.filter(order => {
+      const filteredOosData = filteredData.filter(order => {
         return (order.status.includes('oos'));
       });
       setTheOrders(filteredOosData);
